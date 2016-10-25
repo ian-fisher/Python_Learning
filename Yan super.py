@@ -1,4 +1,3 @@
-задание на етот раз такое:
 import tkinter
 
 def plus():
