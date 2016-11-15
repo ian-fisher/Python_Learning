@@ -1,28 +1,48 @@
-#!/usr/bin/env
-# -*- coding: utf-8 -*-
-#
-#  hello.py
-#  
-#  Copyright 2016 linaro <linaro@linaro-alip>
-#  
-#  This program is free software; you can redistribute it and/or modify
-#  it under the terms of the GNU General Public License as published by
-#  the Free Software Foundation; either version 2 of the License, or
-#  (at your option) any later version.
-#  
-#  This program is distributed in the hope that it will be useful,
-#  but WITHOUT ANY WARRANTY; without even the implied warranty of
-#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#  GNU General Public License for more details.
-#  
-#  You should have received a copy of the GNU General Public License
-#  along with this program; if not, write to the Free Software
-#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
-#  MA 02110-1301, USA.
-#  
-#  
 
 
-print('Whats your name?')
-a = input()
-print('Hello,' + a)
+countx = 0
+count0 = 0
+flag = False
+
+
+def xo(flag, countx, count0):
+    if flag == False:
+        data.set('X')
+        countx += 1
+        flag = True
+    else:
+        data.set('0')
+        count0 += 1
+    flag = False
+        
+root = tkinter.Tk()
+root.title('X and 0')
+root.minsize(width = 800, height = 900)
+root.maxsize(width = 800, height = 900)
+
+data = tkinter.StringVar()
+
+but1 = tkinter.Button(root, width = 100, height = 5, textvariable = data, command = xo(flag, countx, count0))
+but2 = tkinter.Button(root, width = 100, height = 5, textvariable = data, command = xo(flag, countx, count0))
+but3 = tkinter.Button(root, width = 100, height = 5, textvariable = data, command = xo(flag, countx, count0))
+but4 = tkinter.Button(root, width = 100, height = 5, textvariable = data, command = xo(flag, countx, count0))
+but5 = tkinter.Button(root, width = 100, height = 5, textvariable = data, command = xo(flag, countx, count0))
+but6 = tkinter.Button(root, width = 100, height = 5, textvariable = data, command = xo(flag, countx, count0))
+but7 = tkinter.Button(root, width = 100, height = 5, textvariable = data, command = xo(flag, countx, count0))
+but8 = tkinter.Button(root, width = 100, height = 5, textvariable = data, command = xo(flag, countx, count0))
+but9 = tkinter.Button(root, width = 100, height = 5, textvariable = data, command = xo(flag, countx, count0))
+
+but1.pack()
+but2.pack()
+but3.pack()
+
+but4.pack()
+but5.pack()
+but6.pack()
+
+but7.pack()
+but8.pack()
+but9.pack()
+
+root.mainloop()
+
