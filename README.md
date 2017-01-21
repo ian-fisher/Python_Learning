@@ -1,23 +1,16 @@
-# Python_Learning
-#((временно: очередние долгожданние задачи:)
-1.data = [1,6,4,8,2,645,123]
-data.sort()
+import tkinter
 
-print(data)
-print(data.index(4))
+root = tkinter.Tk()
+root.title('дверной лабиринт')
+root.minsize(width = 570, height = 500)
+root.maxsize(width = 570, height = 500)
 
-2.def fr(x):
-    return list(x)
+Button1 = tkinter.Button(root, width = 30, height = 50, text = 'налево')
+Button2 = tkinter.Button(root, width = 30, height = 50, text = 'направо')
+Button3 = tkinter.Button(root, width = 30, height = 50, text = 'вернутся')
 
-print(fr('Good'))
+Button1.grid(row = 2,column = 0)
+Button2.grid(row = 2,column = 1)
+Button3.grid(row = 2,column = 2)
 
-3.  data = [x]
-def fr(x):
-    return list(x)
-
-if data == 10 or data >10:
-    print(fr(str(input())))
-    print(data.index(x))
-if data < 10:
-    list.remove(x)
-                                     НЕПРАВЕЛЬНЫЙ 3.
+root.mainloop()
